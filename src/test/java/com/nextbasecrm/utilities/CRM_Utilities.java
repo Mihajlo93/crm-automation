@@ -39,13 +39,19 @@ public class CRM_Utilities {
             WebElement inputUsername = driver.findElement(By.xpath("//input[@name='USER_LOGIN']"));
             inputUsername.sendKeys(eachEmail);
             try {
-                Thread.sleep(2000);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
             //4. Enter valid password
             WebElement inputPassword = driver.findElement(By.xpath("//input[@name='USER_PASSWORD']"));
             inputPassword.sendKeys(password);
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             //5. Click to Log In button
             WebElement loginButton = driver.findElement(By.xpath("//input[@class='login-btn']"));
             loginButton.click();
