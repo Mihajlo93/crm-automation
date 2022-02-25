@@ -17,5 +17,6 @@ public class CRM_Utilities {
         //5. Click to Log In button
         WebElement loginButton = driver.findElement(By.xpath("//input[@class='login-btn']"));
         loginButton.click();
+        //
     }
 }
