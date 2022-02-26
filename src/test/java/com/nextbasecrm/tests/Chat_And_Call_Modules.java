@@ -48,7 +48,6 @@ public class Chat_And_Call_Modules {
     }
 
 
-
     @Test
     public void chat_and_call_modules_test2() {
         CRM_Utilities.crm_login(driver, "hr59@cydeo.com", "UserUser");
@@ -92,6 +91,7 @@ public class Chat_And_Call_Modules {
         Assert.assertTrue(activityStreamModule.isDisplayed());
     }
 
+
     @Test
     public void chat_and_call_modules_test4() {
         CRM_Utilities.crm_login(driver, "marketing59@cydeo.com", "UserUser");
@@ -113,6 +113,7 @@ public class Chat_And_Call_Modules {
         Assert.assertTrue(activityStreamModule.isDisplayed());
 
     }
+
     @Test
     public void chat_and_call_modules_test5() {
         CRM_Utilities.crm_login(driver, "helpdesk58@cydeo.com", "UserUser");
@@ -134,6 +135,7 @@ public class Chat_And_Call_Modules {
         Assert.assertTrue(activityStreamModule.isDisplayed());
 
     }
+
     @Test
     public void chat_and_call_modules_test6() {
         CRM_Utilities.crm_login(driver, "helpdesk59@cydeo.com", "UserUser");
@@ -158,7 +160,7 @@ public class Chat_And_Call_Modules {
 
     @AfterMethod
     public void tearDownMethod() {
-       driver.close();
+        driver.close();
     }
 }
 
