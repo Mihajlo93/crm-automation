@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class Chat_And_Call_Modules {
+public class US8_Chat_And_Call_Modules {
 
     WebDriver driver;
 
