@@ -63,7 +63,19 @@ public class US2_Checkbox_Save_Credentials {
         System.out.println("messageReminder.isDisplayed()= " + messageReminder.isDisplayed());
     }
 
+    @Test
+    public void testName() {
 
+        //  scenario: Verify Users are able to check the checkbox
+        WebElement checkbox=driver.findElement(By.id("USER_REMEMBER"));
+        System.out.println("checkbox.isDisplayed()= " +checkbox.isDisplayed());
+        // Click to “checkbox”
+        checkbox.click();
+
+
+
+
+    }
 
 
 
