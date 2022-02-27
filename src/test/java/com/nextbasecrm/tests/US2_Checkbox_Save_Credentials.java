@@ -50,6 +50,20 @@ public class US2_Checkbox_Save_Credentials {
     }
 
 
+    @Test
+    public void Remember() {
+        // 1.  Checkbox label displayed  “Remember me on this computer”
+        WebElement messageReminder =driver.findElement(By.className("login-item-checkbox-label"));
+        Assert.assertTrue(messageReminder.isDisplayed(), " NOT displayed.");
+
+        String expectedText = "Remember me on this computer";
+        String actualText = messageReminder.getText();
+
+        Assert.assertEquals(actualText, expectedText, "Actual result text is not as expected!!!");
+        System.out.println("messageReminder.isDisplayed()= " + messageReminder.isDisplayed());
+    }
+
+
 
 
 
