@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class Desktop_Options_Homepage {
+public class US14_Desktop_Options_Homepage {
 
     WebDriver driver;
 
