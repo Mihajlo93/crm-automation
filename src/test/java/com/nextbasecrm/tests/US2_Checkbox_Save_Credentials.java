@@ -25,6 +25,7 @@ public class US2_Checkbox_Save_Credentials {
         driver.get(ConfigurationReader.getProperty("env"));
 
 
+
     }
 
 
@@ -36,7 +37,7 @@ public class US2_Checkbox_Save_Credentials {
 
 
   @Test
-    public void login_with_valid_credentials_with_login_btn() {
+    public void login_with_valid_credentials() {
         // username
         WebElement userName = driver.findElement(By.xpath("(//input[@class='login-inp'])[1]"));
         userName.sendKeys(ConfigurationReader.getProperty("username"));
